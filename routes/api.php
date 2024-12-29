@@ -10,7 +10,6 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 //CRUD USUARIOS
-
 Route::get("/usuario", [UsuarioController::class, "funListar"]);
 Route::post("/usuario",[UsuarioController::class, "funGuardar"]);
 Route::put("/usuario/{id}",[UsuarioController::class, "funModificar"]);
